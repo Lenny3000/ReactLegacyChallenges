@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
  
-const CatList = () => {
- return (
-   <div>
-     {this.props.breeds.Map(cat => <li>cat</li> )}
-   </div>
- )
+class Catlist extends Component {
+  render() { 
+    return ( 
+      <div>
+        {this.props.cats.map((cat) => (
+          <li>{cat}</li>
+        ))}
+      </div>
+     );
+  }
 }
  
-export default CatList;
+export default Catlist;
